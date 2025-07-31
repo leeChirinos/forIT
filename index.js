@@ -3,10 +3,10 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
+const mainRouter = require("./src/routes/main.router");
+app.use(mainRouter);
 
-app.get("/", (req, res) => {
-  res.send("Hola Prueba!");
-});
+app.use(require("./src/routes/productos.router"));
 
 const PORT = process.env.PORT || 3001;
 

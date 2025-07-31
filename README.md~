@@ -1,0 +1,20 @@
+# CRUD con Node.js y Express
+---
+Este proyecto se implementan operaciones CRUD en lista de tareas
+---
+
+## Tecnologías utilizadas
+---
+- Node.js
+- Express
+---
+## Instalación
+---
+shell
+npm install
+---
+## Ejecutar
+---
+shell
+npm run dev
+---
