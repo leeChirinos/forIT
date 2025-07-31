@@ -17,21 +17,18 @@
     </table> -->
 
 <section class="products">
-  <% productos.forEach(producto=> { %>
-    <article>
-      <h2>
-        <%= producto.title %>
-      </h2>
-      <p>
-        <%= producto.description %>
-      </p>
-      <% if (producto.category==='electronics' ) { %>
-        <p>Perfecto para amantes de la tecnología. Rendimiento y diseño garantizados.</p>
-        <% } else if (producto.category==='jewelery' ) { %>
-          <p>Una joya única que resalta tu elegancia y personalidad.</p>
+      <% productos.forEach(producto => { %>
+        <article>
+          <h2><%= producto.title %></h2>
+          <p><%= producto.description %></p>
+
+          <% if(producto.category === 'electronics') { %>
+            <p>Perfecto para amantes de la tecnología. Rendimiento y diseño garantizados.</p>
+          <% } else if(producto.category === 'jewelery') { %>
+            <p>Una joya única que resalta tu elegancia y personalidad.</p>
           <% } else { %>
-            <p>Producto destacado por su excelente relación precio-calidad.</p>
-            <% } %>
-    </article>
-    <% }) %>
-</section>
+            <p>Producto destacado por Holaaa.</p>
+          <% } %>
+        </article>
+      <% }); %>
+    </section>
